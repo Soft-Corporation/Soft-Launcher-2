@@ -2,100 +2,100 @@
 Imports System.IO
 Imports MaterialSkin
 Public Class Soft_Optimizer
-    Private Sub MaterialProgressBar1_Click(sender As Object, e As EventArgs) Handles MaterialProgressBar1.Click
+
+
+    Dim NuovP As System.Drawing.Point
+    Dim x, p As Integer
+
+
+    Private Sub Panel8_MouseEnter(sender As Object, e As EventArgs) Handles Panel8.MouseEnter
+        x = Control.MousePosition.X - Me.Location.X
+        p = Control.MousePosition.Y - Me.Location.Y
+    End Sub
+
+
+    Private Sub MaterialProgressBar1_Click(sender As Object, e As EventArgs)
 
     End Sub
 
     Private Sub Soft_Optimizer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Timer3.Start()
-        Timer1.Start()
 
-        If My.Computer.FileSystem.DirectoryExists(Application.StartupPath & "\Dark") Then
-            Dim SkinManager As MaterialSkinManager = MaterialSkinManager.Instance
-
-
-
-            SkinManager.AddFormToManage(Me)
-
-            SkinManager.Theme = MaterialSkinManager.Themes.DARK
-
-
-
-        End If
-
-
-        If My.Computer.FileSystem.DirectoryExists(Application.StartupPath & "\Light") Then
-            Dim SkinManager As MaterialSkinManager = MaterialSkinManager.Instance
-
-
-
-            SkinManager.AddFormToManage(Me)
-
-            SkinManager.Theme = MaterialSkinManager.Themes.LIGHT
-        End If
 
         If My.Computer.FileSystem.DirectoryExists(Application.StartupPath & "\Blue") Then
-            Dim SkinManager As MaterialSkinManager = MaterialSkinManager.Instance
+            Timer6.Start()
+            Timer7.Stop()
+            Timer8.Stop()
+            Timer9.Stop()
+            Timer10.Stop()
+            Timer11.Stop()
 
-
-
-            SkinManager.AddFormToManage(Me)
-
-
-
-            SkinManager.ColorScheme = New ColorScheme(Primary.Blue900, Primary.Blue900, Primary.Blue900, Accent.LightBlue200, TextShade.WHITE)
         End If
 
+
         If My.Computer.FileSystem.DirectoryExists(Application.StartupPath & "\Red") Then
-            Dim SkinManager As MaterialSkinManager = MaterialSkinManager.Instance
+            Timer6.Stop()
+            Timer7.Start()
+            Timer8.Stop()
+            Timer9.Stop()
+            Timer10.Stop()
+            Timer11.Stop()
 
-
-
-            SkinManager.AddFormToManage(Me)
-
-
-
-            SkinManager.ColorScheme = New ColorScheme(Primary.Red900, Primary.Red900, Primary.Red900, Accent.LightBlue200, TextShade.WHITE)
         End If
 
         If My.Computer.FileSystem.DirectoryExists(Application.StartupPath & "\Green") Then
-            Dim SkinManager As MaterialSkinManager = MaterialSkinManager.Instance
+            Timer6.Stop()
+            Timer7.Stop()
+            Timer8.Start()
+            Timer9.Stop()
+            Timer10.Stop()
+            Timer11.Stop()
 
-
-
-            SkinManager.AddFormToManage(Me)
-
-
-
-            SkinManager.ColorScheme = New ColorScheme(Primary.Green900, Primary.Green900, Primary.Green900, Accent.LightBlue200, TextShade.WHITE)
         End If
 
         If My.Computer.FileSystem.DirectoryExists(Application.StartupPath & "\Orange") Then
-            Dim SkinManager As MaterialSkinManager = MaterialSkinManager.Instance
+            Timer6.Stop()
+            Timer7.Stop()
+            Timer8.Stop()
+            Timer9.Start()
+            Timer10.Stop()
+            Timer11.Stop()
 
-
-
-            SkinManager.AddFormToManage(Me)
-
-
-
-            SkinManager.ColorScheme = New ColorScheme(Primary.Orange900, Primary.Orange900, Primary.Orange900, Accent.LightBlue200, TextShade.WHITE)
         End If
+
+        If My.Computer.FileSystem.DirectoryExists(Application.StartupPath & "\Purple") Then
+            Timer6.Stop()
+            Timer7.Stop()
+            Timer8.Stop()
+            Timer9.Stop()
+            Timer10.Start()
+            Timer11.Stop()
+
+        End If
+
+
+        If My.Computer.FileSystem.DirectoryExists(Application.StartupPath & "\Gold") Then
+            Timer6.Stop()
+            Timer7.Stop()
+            Timer8.Stop()
+            Timer9.Stop()
+            Timer10.Stop()
+            Timer11.Start()
+        End If
+
     End Sub
 
     Private Sub download_DownloadProgressChanged(sender As Object, e As DownloadProgressChangedEventArgs) Handles download.DownloadProgressChanged
-        MaterialProgressBar1.Value = e.ProgressPercentage
+
     End Sub
 
     Public WithEvents download As New WebClient
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub MaterialButton2_Click(sender As Object, e As EventArgs) Handles MaterialButton2.Click
-        MaterialLabel3.Show()
-        MaterialProgressBar1.Show()
+    Private Sub MaterialButton2_Click(sender As Object, e As EventArgs)
+
         Directory.CreateDirectory("C:\IN")
         download.DownloadFileAsync(New Uri("https://612092f6-6003-49d0-8fe5-2e737d705081.usrfiles.com/archives/612092_d791b78b82024b89bf43dd7f03d1f1a2.zip"), TextBox1.Text)
         Directory.CreateDirectory("C:\IN\So")
@@ -104,7 +104,7 @@ Public Class Soft_Optimizer
 
     End Sub
 
-    Private Sub MaterialButton1_Click(sender As Object, e As EventArgs) Handles MaterialButton1.Click
+    Private Sub MaterialButton1_Click(sender As Object, e As EventArgs)
         Process.Start("C:\So\Soft Optimizer.exe")
 
         If My.Computer.FileSystem.DirectoryExists("C:\IN") Then
@@ -123,8 +123,6 @@ Public Class Soft_Optimizer
         End If
 
 
-        MaterialLabel3.Hide()
-        MaterialProgressBar1.Hide()
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs)
@@ -135,11 +133,11 @@ Public Class Soft_Optimizer
 
     End Sub
 
-    Private Sub MaterialButton3_Click(sender As Object, e As EventArgs) Handles MaterialButton3.Click
+    Private Sub MaterialButton3_Click(sender As Object, e As EventArgs)
         Process.Start("C:\IN\Soft Optimizer Build 1436 sl.zip")
     End Sub
 
-    Private Sub MaterialButton4_Click(sender As Object, e As EventArgs) Handles MaterialButton4.Click
+    Private Sub MaterialButton4_Click(sender As Object, e As EventArgs)
 
         On Error Resume Next
         Directory.Delete("C:\So\3")
@@ -172,43 +170,10 @@ Public Class Soft_Optimizer
     Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
         Timer1.Stop()
         Me.Show()
-        If My.Computer.FileSystem.DirectoryExists("C:\So") Then
-            MaterialButton4.Enabled = True
-        Else
-            MaterialButton4.Enabled = False
-        End If
 
-        MaterialButton3.Enabled = False
-
-
-        If My.Computer.FileSystem.DirectoryExists("C:\So") Then
-            MaterialButton2.Enabled = False
-        Else
-            MaterialButton2.Enabled = True
-
-        End If
-
-        If My.Computer.FileSystem.DirectoryExists("C:\So") Then
-            MaterialButton1.Enabled = True
-        Else
-            MaterialButton1.Enabled = False
-        End If
-
-        If My.Computer.FileSystem.DirectoryExists("C:\IN\So") Then
-            MaterialButton3.Enabled = True
-        Else
-            MaterialButton3.Enabled = False
-        End If
-
-
-        If My.Computer.FileSystem.DirectoryExists("C:\So") Then
-            MaterialButton5.Enabled = True
-        Else
-            MaterialButton5.Enabled = False
-        End If
     End Sub
 
-    Private Sub MaterialButton5_Click(sender As Object, e As EventArgs) Handles MaterialButton5.Click
+    Private Sub MaterialButton5_Click(sender As Object, e As EventArgs)
         download.DownloadFileAsync(New Uri("ftp://SC@192.168.1.22/Software%20Sl/Soft%20Optimizer%202.02.1/Ver.txt"), Application.StartupPath & "\Updater.txt")
 
         Timer4.Start()
@@ -234,6 +199,68 @@ Public Class Soft_Optimizer
     End Sub
 
     Private Sub Timer6_Tick(sender As Object, e As EventArgs) Handles Timer6.Tick
-        Timer5.Stop()
+        Panel8.BackColor = Color.FromArgb(TrackBar1.Value, Color.RoyalBlue)
+    End Sub
+
+    Private Sub Timer12_Tick(sender As Object, e As EventArgs) Handles Timer12.Tick
+
+    End Sub
+
+    Private Sub Timer7_Tick(sender As Object, e As EventArgs) Handles Timer7.Tick
+        Panel8.BackColor = Color.FromArgb(TrackBar1.Value, Color.Red)
+    End Sub
+
+    Private Sub Timer8_Tick(sender As Object, e As EventArgs) Handles Timer8.Tick
+        Panel8.BackColor = Color.FromArgb(TrackBar1.Value, Color.Green)
+    End Sub
+
+    Private Sub Timer9_Tick(sender As Object, e As EventArgs) Handles Timer9.Tick
+        Panel8.BackColor = Color.FromArgb(TrackBar1.Value, Color.Orange)
+    End Sub
+
+    Private Sub Timer10_Tick(sender As Object, e As EventArgs) Handles Timer10.Tick
+        Panel8.BackColor = Color.FromArgb(TrackBar1.Value, Color.Purple)
+    End Sub
+
+    Private Sub Timer11_Tick(sender As Object, e As EventArgs) Handles Timer11.Tick
+        Panel8.BackColor = Color.FromArgb(TrackBar1.Value, Color.Gold)
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+        Me.Close()
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
+
+    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
+        Process.Start(Application.StartupPath & "\So\Soft Optimizer.exe")
+    End Sub
+
+    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
+        Process.Start("https://grammaticosamuele4.wixsite.com/ilmiosito/updater-downloader-soft-optimizer-si")
+    End Sub
+
+    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
+        On Error Resume Next
+        Process.Start(Application.StartupPath & "\So\Uninstal.exe")
+        Directory.Delete(Application.StartupPath & "\So\Blue")
+        Directory.Delete(Application.StartupPath & "\So\red")
+        Directory.Delete(Application.StartupPath & "\So\green")
+        Directory.Delete(Application.StartupPath & "\So\Orange")
+        Directory.Delete(Application.StartupPath & "\So\Purple")
+        Directory.Delete(Application.StartupPath & "\So\Conf")
+        Directory.Delete(Application.StartupPath & "\So")
+
+    End Sub
+
+    Private Sub Panel8_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel8.MouseMove
+        If e.Button = Windows.Forms.MouseButtons.Left Then
+            NuovP = Control.MousePosition
+            NuovP.X -= (x)
+            NuovP.Y -= (p)
+            Me.Location = NuovP
+        End If
     End Sub
 End Class

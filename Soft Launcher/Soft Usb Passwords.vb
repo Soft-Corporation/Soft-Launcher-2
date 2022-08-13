@@ -2,124 +2,93 @@
 Imports System.Net
 Imports MaterialSkin
 Public Class Soft_Usb_Passwords
+
+    Dim NuovP As System.Drawing.Point
+    Dim x, p As Integer
+
+
+    Private Sub Panel8_MouseEnter(sender As Object, e As EventArgs) Handles Panel8.MouseEnter
+        x = Control.MousePosition.X - Me.Location.X
+        p = Control.MousePosition.Y - Me.Location.Y
+    End Sub
+
+
+
     Private Sub Soft_Usb_Passwords_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Timer1.Start()
-        Timer2.Start()
 
 
-        If My.Computer.FileSystem.DirectoryExists(Application.StartupPath & "\Dark") Then
-            Dim SkinManager As MaterialSkinManager = MaterialSkinManager.Instance
-
-
-
-            SkinManager.AddFormToManage(Me)
-
-            SkinManager.Theme = MaterialSkinManager.Themes.DARK
-
-
-
-        End If
-
-
-        If My.Computer.FileSystem.DirectoryExists(Application.StartupPath & "\Light") Then
-            Dim SkinManager As MaterialSkinManager = MaterialSkinManager.Instance
-
-
-
-            SkinManager.AddFormToManage(Me)
-
-            SkinManager.Theme = MaterialSkinManager.Themes.LIGHT
-        End If
 
         If My.Computer.FileSystem.DirectoryExists(Application.StartupPath & "\Blue") Then
-            Dim SkinManager As MaterialSkinManager = MaterialSkinManager.Instance
+            Timer6.Start()
+            Timer7.Stop()
+            Timer8.Stop()
+            Timer9.Stop()
+            Timer10.Stop()
+            Timer11.Stop()
 
-
-
-            SkinManager.AddFormToManage(Me)
-
-
-
-            SkinManager.ColorScheme = New ColorScheme(Primary.Blue900, Primary.Blue900, Primary.Blue900, Accent.LightBlue200, TextShade.WHITE)
         End If
 
+
         If My.Computer.FileSystem.DirectoryExists(Application.StartupPath & "\Red") Then
-            Dim SkinManager As MaterialSkinManager = MaterialSkinManager.Instance
+            Timer6.Stop()
+            Timer7.Start()
+            Timer8.Stop()
+            Timer9.Stop()
+            Timer10.Stop()
+            Timer11.Stop()
 
-
-
-            SkinManager.AddFormToManage(Me)
-
-
-
-            SkinManager.ColorScheme = New ColorScheme(Primary.Red900, Primary.Red900, Primary.Red900, Accent.LightBlue200, TextShade.WHITE)
         End If
 
         If My.Computer.FileSystem.DirectoryExists(Application.StartupPath & "\Green") Then
-            Dim SkinManager As MaterialSkinManager = MaterialSkinManager.Instance
+            Timer6.Stop()
+            Timer7.Stop()
+            Timer8.Start()
+            Timer9.Stop()
+            Timer10.Stop()
+            Timer11.Stop()
 
-
-
-            SkinManager.AddFormToManage(Me)
-
-
-
-            SkinManager.ColorScheme = New ColorScheme(Primary.Green900, Primary.Green900, Primary.Green900, Accent.LightBlue200, TextShade.WHITE)
         End If
 
         If My.Computer.FileSystem.DirectoryExists(Application.StartupPath & "\Orange") Then
-            Dim SkinManager As MaterialSkinManager = MaterialSkinManager.Instance
+            Timer6.Stop()
+            Timer7.Stop()
+            Timer8.Stop()
+            Timer9.Start()
+            Timer10.Stop()
+            Timer11.Stop()
 
-
-
-            SkinManager.AddFormToManage(Me)
-
-
-
-            SkinManager.ColorScheme = New ColorScheme(Primary.Orange900, Primary.Orange900, Primary.Orange900, Accent.LightBlue200, TextShade.WHITE)
         End If
+
+        If My.Computer.FileSystem.DirectoryExists(Application.StartupPath & "\Purple") Then
+            Timer6.Stop()
+            Timer7.Stop()
+            Timer8.Stop()
+            Timer9.Stop()
+            Timer10.Start()
+            Timer11.Stop()
+
+        End If
+
+
+        If My.Computer.FileSystem.DirectoryExists(Application.StartupPath & "\Gold") Then
+            Timer6.Stop()
+            Timer7.Stop()
+            Timer8.Stop()
+            Timer9.Stop()
+            Timer10.Stop()
+            Timer11.Start()
+        End If
+
+
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Timer2.Stop()
         Me.Show()
 
-        If My.Computer.FileSystem.DirectoryExists("C:\Sup") Then
-            MaterialButton4.Enabled = True
-        Else
-            MaterialButton4.Enabled = False
-        End If
-
-        MaterialButton3.Enabled = False
-
-
-        If My.Computer.FileSystem.DirectoryExists("C:\Sup") Then
-            MaterialButton2.Enabled = False
-        Else
-            MaterialButton2.Enabled = True
-
-        End If
-
-        If My.Computer.FileSystem.DirectoryExists("C:\Sup") Then
-            MaterialButton1.Enabled = True
-        Else
-            MaterialButton1.Enabled = False
-        End If
-
-        If My.Computer.FileSystem.DirectoryExists("C:\IN\Sup") Then
-            MaterialButton3.Enabled = True
-        Else
-            MaterialButton3.Enabled = False
-        End If
-
-        If My.Computer.FileSystem.DirectoryExists("C:\Sup") Then
-            MaterialButton5.Enabled = True
-        Else
-            MaterialButton5.Enabled = False
-        End If
     End Sub
 
-    Private Sub MaterialButton4_Click(sender As Object, e As EventArgs) Handles MaterialButton4.Click
+    Private Sub MaterialButton4_Click(sender As Object, e As EventArgs)
         On Error Resume Next
         Directory.Delete("C:\Sup\3")
         Directory.Delete("C:\Sup\Blue")
@@ -135,9 +104,8 @@ Public Class Soft_Usb_Passwords
 
     End Sub
 
-    Private Sub MaterialButton2_Click(sender As Object, e As EventArgs) Handles MaterialButton2.Click
-        MaterialLabel3.Show()
-        MaterialProgressBar1.Show()
+    Private Sub MaterialButton2_Click(sender As Object, e As EventArgs)
+
         Directory.CreateDirectory("C:\IN")
         download.DownloadFileAsync(New Uri("https://612092f6-6003-49d0-8fe5-2e737d705081.usrfiles.com/archives/612092_5f09f5e36c4249b1bdf51f866844be4e.zip"), TextBox1.Text)
         Directory.CreateDirectory("C:\IN\Sup")
@@ -145,16 +113,16 @@ Public Class Soft_Usb_Passwords
     End Sub
 
     Private Sub download_DownloadProgressChanged(sender As Object, e As DownloadProgressChangedEventArgs) Handles download.DownloadProgressChanged
-        MaterialProgressBar1.Value = e.ProgressPercentage
+
     End Sub
 
     Public WithEvents download As New WebClient
 
-    Private Sub MaterialButton3_Click(sender As Object, e As EventArgs) Handles MaterialButton3.Click
+    Private Sub MaterialButton3_Click(sender As Object, e As EventArgs)
         Process.Start("C:\IN\Sup B 1103 Sl.zip")
     End Sub
 
-    Private Sub MaterialButton1_Click(sender As Object, e As EventArgs) Handles MaterialButton1.Click
+    Private Sub MaterialButton1_Click(sender As Object, e As EventArgs)
         Process.Start("C:\Sup\Soft Usb Passwords.exe")
 
         If My.Computer.FileSystem.DirectoryExists("C:\IN") Then
@@ -173,8 +141,6 @@ Public Class Soft_Usb_Passwords
         End If
 
 
-        MaterialLabel3.Hide()
-        MaterialProgressBar1.Hide()
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
@@ -182,7 +148,7 @@ Public Class Soft_Usb_Passwords
 
     End Sub
 
-    Private Sub MaterialButton5_Click(sender As Object, e As EventArgs) Handles MaterialButton5.Click
+    Private Sub MaterialButton5_Click(sender As Object, e As EventArgs)
         download.DownloadFileAsync(New Uri("ftp://SC@192.168.1.22/Software%20Sl/Soft%20Usb%20Passwords%201.01.1/Ver.txt"), Application.StartupPath & "\Updater.txt")
 
         Timer3.Start()
@@ -208,5 +174,66 @@ Public Class Soft_Usb_Passwords
     Private Sub Timer5_Tick(sender As Object, e As EventArgs) Handles Timer5.Tick
         Timer4.Stop()
 
+    End Sub
+
+    Private Sub Timer11_Tick(sender As Object, e As EventArgs) Handles Timer11.Tick
+        Panel8.BackColor = Color.FromArgb(TrackBar1.Value, Color.Gold)
+    End Sub
+
+    Private Sub Timer6_Tick(sender As Object, e As EventArgs) Handles Timer6.Tick
+        Panel8.BackColor = Color.FromArgb(TrackBar1.Value, Color.RoyalBlue)
+    End Sub
+
+    Private Sub Timer7_Tick(sender As Object, e As EventArgs) Handles Timer7.Tick
+        Panel8.BackColor = Color.FromArgb(TrackBar1.Value, Color.Red)
+    End Sub
+
+    Private Sub Timer8_Tick(sender As Object, e As EventArgs) Handles Timer8.Tick
+        Panel8.BackColor = Color.FromArgb(TrackBar1.Value, Color.Green)
+    End Sub
+
+    Private Sub Timer9_Tick(sender As Object, e As EventArgs) Handles Timer9.Tick
+        Panel8.BackColor = Color.FromArgb(TrackBar1.Value, Color.Orange)
+    End Sub
+
+    Private Sub Timer10_Tick(sender As Object, e As EventArgs) Handles Timer10.Tick
+        Panel8.BackColor = Color.FromArgb(TrackBar1.Value, Color.Purple)
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+        Me.Close()
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
+
+    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
+        Process.Start(Application.StartupPath & "\Sup\Soft Usb Passwords.exe")
+    End Sub
+
+    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
+        Process.Start("https://grammaticosamuele4.wixsite.com/ilmiosito/updater-downloader-soft-usb-passwords")
+    End Sub
+
+    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
+        On Error Resume Next
+        Process.Start(Application.StartupPath & "\Sup\Uninstal.exe")
+        Directory.Delete(Application.StartupPath & "\Sup\Blue")
+        Directory.Delete(Application.StartupPath & "\Sup\red")
+        Directory.Delete(Application.StartupPath & "\Sup\green")
+        Directory.Delete(Application.StartupPath & "\Sup\Orange")
+        Directory.Delete(Application.StartupPath & "\Sup\Purple")
+        Directory.Delete(Application.StartupPath & "\Sup\Conf")
+        Directory.Delete(Application.StartupPath & "\Sup")
+    End Sub
+
+    Private Sub Panel8_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel8.MouseMove
+        If e.Button = Windows.Forms.MouseButtons.Left Then
+            NuovP = Control.MousePosition
+            NuovP.X -= (x)
+            NuovP.Y -= (p)
+            Me.Location = NuovP
+        End If
     End Sub
 End Class

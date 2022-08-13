@@ -3,79 +3,78 @@ Imports System.Net
 Imports MaterialSkin
 
 Public Class Software_Package_Installer
+
+    Dim NuovP As System.Drawing.Point
+    Dim x, p As Integer
+
+
+    Private Sub Panel8_MouseEnter(sender As Object, e As EventArgs) Handles Panel8.MouseEnter
+        x = Control.MousePosition.X - Me.Location.X
+        p = Control.MousePosition.Y - Me.Location.Y
+    End Sub
+
     Private Sub Software_Package_Installer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Timer1.Start()
-        Timer2.Start()
-        If My.Computer.FileSystem.DirectoryExists(Application.StartupPath & "\Dark") Then
-            Dim SkinManager As MaterialSkinManager = MaterialSkinManager.Instance
 
-
-
-            SkinManager.AddFormToManage(Me)
-
-            SkinManager.Theme = MaterialSkinManager.Themes.DARK
-
-
-
-        End If
-
-
-        If My.Computer.FileSystem.DirectoryExists(Application.StartupPath & "\Light") Then
-            Dim SkinManager As MaterialSkinManager = MaterialSkinManager.Instance
-
-
-
-            SkinManager.AddFormToManage(Me)
-
-            SkinManager.Theme = MaterialSkinManager.Themes.LIGHT
-        End If
 
         If My.Computer.FileSystem.DirectoryExists(Application.StartupPath & "\Blue") Then
-            Dim SkinManager As MaterialSkinManager = MaterialSkinManager.Instance
+            Timer6.Start()
+            Timer7.Stop()
+            Timer8.Stop()
+            Timer9.Stop()
+            Timer10.Stop()
+            Timer11.Stop()
 
-
-
-            SkinManager.AddFormToManage(Me)
-
-
-
-            SkinManager.ColorScheme = New ColorScheme(Primary.Blue900, Primary.Blue900, Primary.Blue900, Accent.LightBlue200, TextShade.WHITE)
         End If
 
+
         If My.Computer.FileSystem.DirectoryExists(Application.StartupPath & "\Red") Then
-            Dim SkinManager As MaterialSkinManager = MaterialSkinManager.Instance
+            Timer6.Stop()
+            Timer7.Start()
+            Timer8.Stop()
+            Timer9.Stop()
+            Timer10.Stop()
+            Timer11.Stop()
 
-
-
-            SkinManager.AddFormToManage(Me)
-
-
-
-            SkinManager.ColorScheme = New ColorScheme(Primary.Red900, Primary.Red900, Primary.Red900, Accent.LightBlue200, TextShade.WHITE)
         End If
 
         If My.Computer.FileSystem.DirectoryExists(Application.StartupPath & "\Green") Then
-            Dim SkinManager As MaterialSkinManager = MaterialSkinManager.Instance
+            Timer6.Stop()
+            Timer7.Stop()
+            Timer8.Start()
+            Timer9.Stop()
+            Timer10.Stop()
+            Timer11.Stop()
 
-
-
-            SkinManager.AddFormToManage(Me)
-
-
-
-            SkinManager.ColorScheme = New ColorScheme(Primary.Green900, Primary.Green900, Primary.Green900, Accent.LightBlue200, TextShade.WHITE)
         End If
 
         If My.Computer.FileSystem.DirectoryExists(Application.StartupPath & "\Orange") Then
-            Dim SkinManager As MaterialSkinManager = MaterialSkinManager.Instance
+            Timer6.Stop()
+            Timer7.Stop()
+            Timer8.Stop()
+            Timer9.Start()
+            Timer10.Stop()
+            Timer11.Stop()
+
+        End If
+
+        If My.Computer.FileSystem.DirectoryExists(Application.StartupPath & "\Purple") Then
+            Timer6.Stop()
+            Timer7.Stop()
+            Timer8.Stop()
+            Timer9.Stop()
+            Timer10.Start()
+            Timer11.Stop()
+
+        End If
 
 
-
-            SkinManager.AddFormToManage(Me)
-
-
-
-            SkinManager.ColorScheme = New ColorScheme(Primary.Orange900, Primary.Orange900, Primary.Orange900, Accent.LightBlue200, TextShade.WHITE)
+        If My.Computer.FileSystem.DirectoryExists(Application.StartupPath & "\Gold") Then
+            Timer6.Stop()
+            Timer7.Stop()
+            Timer8.Stop()
+            Timer9.Stop()
+            Timer10.Stop()
+            Timer11.Start()
         End If
 
     End Sub
@@ -84,44 +83,10 @@ Public Class Software_Package_Installer
         Timer2.Stop()
         Me.Show()
 
-        If My.Computer.FileSystem.DirectoryExists("C:\Spi") Then
-            MaterialButton4.Enabled = True
-        Else
-            MaterialButton4.Enabled = False
-        End If
 
-        MaterialButton3.Enabled = False
-
-
-        If My.Computer.FileSystem.DirectoryExists("C:\Spi") Then
-            MaterialButton2.Enabled = False
-        Else
-            MaterialButton2.Enabled = True
-
-        End If
-
-        If My.Computer.FileSystem.DirectoryExists("C:\Spi") Then
-            MaterialButton1.Enabled = True
-        Else
-            MaterialButton1.Enabled = False
-        End If
-
-        If My.Computer.FileSystem.DirectoryExists("C:\IN\Spi") Then
-            MaterialButton3.Enabled = True
-        Else
-            MaterialButton3.Enabled = False
-        End If
-
-
-
-        If My.Computer.FileSystem.DirectoryExists("C:\Spi") Then
-            MaterialButton5.Enabled = True
-        Else
-            MaterialButton5.Enabled = False
-        End If
     End Sub
 
-    Private Sub MaterialButton4_Click(sender As Object, e As EventArgs) Handles MaterialButton4.Click
+    Private Sub MaterialButton4_Click(sender As Object, e As EventArgs)
         On Error Resume Next
 
         Directory.Delete("C:\Spi\Blue")
@@ -135,14 +100,13 @@ Public Class Software_Package_Installer
         Process.Start("C:\Spi\Uninstal.exe")
     End Sub
 
-    Private Sub MaterialButton3_Click(sender As Object, e As EventArgs) Handles MaterialButton3.Click
+    Private Sub MaterialButton3_Click(sender As Object, e As EventArgs)
 
         Process.Start("C:\IN\Spi Build 1414 Sl.zip")
     End Sub
 
-    Private Sub MaterialButton2_Click(sender As Object, e As EventArgs) Handles MaterialButton2.Click
-        MaterialLabel3.Show()
-        MaterialProgressBar1.Show()
+    Private Sub MaterialButton2_Click(sender As Object, e As EventArgs)
+
         Directory.CreateDirectory("C:\IN")
         Directory.CreateDirectory("C:\IN\Spi")
         download.DownloadFileAsync(New Uri("https://612092f6-6003-49d0-8fe5-2e737d705081.usrfiles.com/archives/612092_d4a4d81bb9f84a21b8439d21dbc62e6b.zip"), TextBox1.Text)
@@ -152,7 +116,7 @@ Public Class Software_Package_Installer
 
     Public WithEvents download As New WebClient
 
-    Private Sub MaterialButton1_Click(sender As Object, e As EventArgs) Handles MaterialButton1.Click
+    Private Sub MaterialButton1_Click(sender As Object, e As EventArgs)
         Process.Start("C:\Spi\Software Package Installer.exe")
 
         If My.Computer.FileSystem.DirectoryExists("C:\IN") Then
@@ -171,12 +135,10 @@ Public Class Software_Package_Installer
         End If
 
 
-        MaterialLabel3.Hide()
-        MaterialProgressBar1.Hide()
     End Sub
 
     Private Sub download_DownloadProgressChanged(sender As Object, e As DownloadProgressChangedEventArgs) Handles download.DownloadProgressChanged
-        MaterialProgressBar1.Value = e.ProgressPercentage
+
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
@@ -187,7 +149,7 @@ Public Class Software_Package_Installer
 
     End Sub
 
-    Private Sub MaterialButton5_Click_1(sender As Object, e As EventArgs) Handles MaterialButton5.Click
+    Private Sub MaterialButton5_Click_1(sender As Object, e As EventArgs)
         download.DownloadFileAsync(New Uri("ftp://SC@192.168.1.22/Software%20Sl/Software%20Package%20Installer%202.01.6/Ver.txt"), Application.StartupPath & "\Updater.txt")
 
         Timer3.Start()
@@ -212,6 +174,67 @@ Public Class Software_Package_Installer
             Process.Start("https://grammaticosamuele4.wixsite.com/ilmiosito/updater-spi-sl")
         Else
             MsgBox("Aggiornato")
+        End If
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+        Me.Close()
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
+
+    Private Sub Timer6_Tick(sender As Object, e As EventArgs) Handles Timer6.Tick
+        Panel8.BackColor = Color.FromArgb(TrackBar1.Value, Color.RoyalBlue)
+    End Sub
+
+    Private Sub Timer7_Tick(sender As Object, e As EventArgs) Handles Timer7.Tick
+        Panel8.BackColor = Color.FromArgb(TrackBar1.Value, Color.Red)
+    End Sub
+
+    Private Sub Timer8_Tick(sender As Object, e As EventArgs) Handles Timer8.Tick
+        Panel8.BackColor = Color.FromArgb(TrackBar1.Value, Color.Green)
+    End Sub
+
+    Private Sub Timer9_Tick(sender As Object, e As EventArgs) Handles Timer9.Tick
+        Panel8.BackColor = Color.FromArgb(TrackBar1.Value, Color.Orange)
+    End Sub
+
+    Private Sub Timer10_Tick(sender As Object, e As EventArgs) Handles Timer10.Tick
+        Panel8.BackColor = Color.FromArgb(TrackBar1.Value, Color.Purple)
+    End Sub
+
+    Private Sub Timer11_Tick(sender As Object, e As EventArgs) Handles Timer11.Tick
+        Panel8.BackColor = Color.FromArgb(TrackBar1.Value, Color.Gold)
+    End Sub
+
+    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
+        Process.Start(Application.StartupPath & "\Spi\Software Package Installer.exe")
+    End Sub
+
+    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
+        Process.Start("https://grammaticosamuele4.wixsite.com/ilmiosito/updater-downloader-spi")
+    End Sub
+
+    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
+        On Error Resume Next
+        Process.Start(Application.StartupPath & "\Spi\Uninstal.exe")
+        Directory.Delete(Application.StartupPath & "\Spi\Blue")
+        Directory.Delete(Application.StartupPath & "\Spi\red")
+        Directory.Delete(Application.StartupPath & "\Spi\green")
+        Directory.Delete(Application.StartupPath & "\Spi\Orange")
+        Directory.Delete(Application.StartupPath & "\Spi\Purple")
+        Directory.Delete(Application.StartupPath & "\Spi\Conf")
+        Directory.Delete(Application.StartupPath & "\Spi")
+    End Sub
+
+    Private Sub Panel8_MouseMove(sender As Object, e As MouseEventArgs) Handles Panel8.MouseMove
+        If e.Button = Windows.Forms.MouseButtons.Left Then
+            NuovP = Control.MousePosition
+            NuovP.X -= (x)
+            NuovP.Y -= (p)
+            Me.Location = NuovP
         End If
     End Sub
 End Class

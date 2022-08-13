@@ -19,13 +19,10 @@ Public Class Conf
 
 
 
-        SkinManager.AddFormToManage(Form1)
 
 
 
-        SkinManager.Theme = MaterialSkinManager.Themes.DARK
 
-        SkinManager.ColorScheme = New ColorScheme(Primary.Blue900, Primary.Blue900, Primary.Blue900, Accent.LightBlue200, TextShade.WHITE)
 
 
         Me.Close()

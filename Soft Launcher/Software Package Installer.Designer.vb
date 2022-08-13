@@ -1,6 +1,6 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Software_Package_Installer
-    Inherits MaterialSkin.Controls.MaterialForm
+    Inherits System.Windows.Forms.Form
 
     'Form esegue l'override del metodo Dispose per pulire l'elenco dei componenti.
     <System.Diagnostics.DebuggerNonUserCode()>
@@ -23,164 +23,61 @@ Partial Class Software_Package_Installer
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.MaterialButton4 = New MaterialSkin.Controls.MaterialButton()
-        Me.MaterialButton3 = New MaterialSkin.Controls.MaterialButton()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.MaterialButton2 = New MaterialSkin.Controls.MaterialButton()
-        Me.MaterialButton1 = New MaterialSkin.Controls.MaterialButton()
-        Me.MaterialProgressBar1 = New MaterialSkin.Controls.MaterialProgressBar()
-        Me.MaterialLabel3 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialLabel2 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialLabel1 = New MaterialSkin.Controls.MaterialLabel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
-        Me.MaterialButton5 = New MaterialSkin.Controls.MaterialButton()
         Me.b = New System.Windows.Forms.TextBox()
         Me.a = New System.Windows.Forms.TextBox()
         Me.MaterialProgressBar2 = New MaterialSkin.Controls.MaterialProgressBar()
         Me.Timer5 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer4 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
+        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.PictureBox61 = New System.Windows.Forms.PictureBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Timer6 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer7 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer8 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer9 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer10 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer11 = New System.Windows.Forms.Timer(Me.components)
+        Me.TrackBar1 = New System.Windows.Forms.TrackBar()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel9.SuspendLayout()
+        Me.Panel8.SuspendLayout()
+        CType(Me.PictureBox61, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        Me.Panel3.SuspendLayout()
+        CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'MaterialButton4
-        '
-        Me.MaterialButton4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialButton4.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.MaterialButton4.Depth = 0
-        Me.MaterialButton4.HighEmphasis = True
-        Me.MaterialButton4.Icon = Nothing
-        Me.MaterialButton4.Location = New System.Drawing.Point(371, 333)
-        Me.MaterialButton4.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialButton4.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialButton4.Name = "MaterialButton4"
-        Me.MaterialButton4.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.MaterialButton4.Size = New System.Drawing.Size(112, 36)
-        Me.MaterialButton4.TabIndex = 19
-        Me.MaterialButton4.Text = "Disinstalla"
-        Me.MaterialButton4.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.MaterialButton4.UseAccentColor = False
-        Me.MaterialButton4.UseVisualStyleBackColor = True
-        '
-        'MaterialButton3
-        '
-        Me.MaterialButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialButton3.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.MaterialButton3.Depth = 0
-        Me.MaterialButton3.HighEmphasis = True
-        Me.MaterialButton3.Icon = Nothing
-        Me.MaterialButton3.Location = New System.Drawing.Point(491, 333)
-        Me.MaterialButton3.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialButton3.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialButton3.Name = "MaterialButton3"
-        Me.MaterialButton3.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.MaterialButton3.Size = New System.Drawing.Size(133, 36)
-        Me.MaterialButton3.TabIndex = 18
-        Me.MaterialButton3.Text = "Apri Installer"
-        Me.MaterialButton3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.MaterialButton3.UseAccentColor = False
-        Me.MaterialButton3.UseVisualStyleBackColor = True
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(514, 81)
+        Me.TextBox1.Location = New System.Drawing.Point(502, 131)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(280, 20)
         Me.TextBox1.TabIndex = 17
         Me.TextBox1.Text = "C:\IN\Spi Build 1414 Sl.zip"
         Me.TextBox1.Visible = False
         '
-        'MaterialButton2
-        '
-        Me.MaterialButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialButton2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.MaterialButton2.Depth = 0
-        Me.MaterialButton2.HighEmphasis = True
-        Me.MaterialButton2.Icon = Nothing
-        Me.MaterialButton2.Location = New System.Drawing.Point(632, 333)
-        Me.MaterialButton2.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialButton2.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialButton2.Name = "MaterialButton2"
-        Me.MaterialButton2.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.MaterialButton2.Size = New System.Drawing.Size(89, 36)
-        Me.MaterialButton2.TabIndex = 16
-        Me.MaterialButton2.Text = "Installa"
-        Me.MaterialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.MaterialButton2.UseAccentColor = False
-        Me.MaterialButton2.UseVisualStyleBackColor = True
-        '
-        'MaterialButton1
-        '
-        Me.MaterialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.MaterialButton1.Depth = 0
-        Me.MaterialButton1.HighEmphasis = True
-        Me.MaterialButton1.Icon = Nothing
-        Me.MaterialButton1.Location = New System.Drawing.Point(729, 333)
-        Me.MaterialButton1.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialButton1.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialButton1.Name = "MaterialButton1"
-        Me.MaterialButton1.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.MaterialButton1.Size = New System.Drawing.Size(64, 36)
-        Me.MaterialButton1.TabIndex = 15
-        Me.MaterialButton1.Text = "Apri"
-        Me.MaterialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.MaterialButton1.UseAccentColor = False
-        Me.MaterialButton1.UseVisualStyleBackColor = True
-        '
-        'MaterialProgressBar1
-        '
-        Me.MaterialProgressBar1.Depth = 0
-        Me.MaterialProgressBar1.Location = New System.Drawing.Point(6, 298)
-        Me.MaterialProgressBar1.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialProgressBar1.Name = "MaterialProgressBar1"
-        Me.MaterialProgressBar1.Size = New System.Drawing.Size(788, 5)
-        Me.MaterialProgressBar1.TabIndex = 14
-        Me.MaterialProgressBar1.Visible = False
-        '
-        'MaterialLabel3
-        '
-        Me.MaterialLabel3.AutoSize = True
-        Me.MaterialLabel3.Depth = 0
-        Me.MaterialLabel3.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel3.Location = New System.Drawing.Point(6, 263)
-        Me.MaterialLabel3.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel3.Name = "MaterialLabel3"
-        Me.MaterialLabel3.Size = New System.Drawing.Size(145, 19)
-        Me.MaterialLabel3.TabIndex = 13
-        Me.MaterialLabel3.Text = "Download in corso..."
-        Me.MaterialLabel3.Visible = False
-        '
-        'MaterialLabel2
-        '
-        Me.MaterialLabel2.AutoSize = True
-        Me.MaterialLabel2.Depth = 0
-        Me.MaterialLabel2.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel2.Location = New System.Drawing.Point(19, 197)
-        Me.MaterialLabel2.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel2.Name = "MaterialLabel2"
-        Me.MaterialLabel2.Size = New System.Drawing.Size(164, 19)
-        Me.MaterialLabel2.TabIndex = 12
-        Me.MaterialLabel2.Text = "Ultima Versione: 2.01.6"
-        '
-        'MaterialLabel1
-        '
-        Me.MaterialLabel1.AutoSize = True
-        Me.MaterialLabel1.Depth = 0
-        Me.MaterialLabel1.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel1.Location = New System.Drawing.Point(144, 121)
-        Me.MaterialLabel1.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel1.Name = "MaterialLabel1"
-        Me.MaterialLabel1.Size = New System.Drawing.Size(190, 19)
-        Me.MaterialLabel1.TabIndex = 11
-        Me.MaterialLabel1.Text = "Software Package Installer"
-        '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.Soft_Launcher.My.Resources.Resources.Senza_titolo1
-        Me.PictureBox1.Location = New System.Drawing.Point(22, 81)
+        Me.PictureBox1.Image = Global.Soft_Launcher.My.Resources.Resources.Senza_titolo9
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 101)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(116, 100)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -195,28 +92,9 @@ Partial Class Software_Package_Installer
         '
         Me.Timer2.Interval = 1
         '
-        'MaterialButton5
-        '
-        Me.MaterialButton5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialButton5.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.MaterialButton5.Depth = 0
-        Me.MaterialButton5.HighEmphasis = True
-        Me.MaterialButton5.Icon = Nothing
-        Me.MaterialButton5.Location = New System.Drawing.Point(51, 333)
-        Me.MaterialButton5.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialButton5.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialButton5.Name = "MaterialButton5"
-        Me.MaterialButton5.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.MaterialButton5.Size = New System.Drawing.Size(312, 36)
-        Me.MaterialButton5.TabIndex = 21
-        Me.MaterialButton5.Text = "Verifica disponibilità aggiornamenti"
-        Me.MaterialButton5.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.MaterialButton5.UseAccentColor = False
-        Me.MaterialButton5.UseVisualStyleBackColor = True
-        '
         'b
         '
-        Me.b.Location = New System.Drawing.Point(438, 191)
+        Me.b.Location = New System.Drawing.Point(438, 181)
         Me.b.Name = "b"
         Me.b.Size = New System.Drawing.Size(100, 20)
         Me.b.TabIndex = 24
@@ -224,7 +102,7 @@ Partial Class Software_Package_Installer
         '
         'a
         '
-        Me.a.Location = New System.Drawing.Point(393, 170)
+        Me.a.Location = New System.Drawing.Point(393, 160)
         Me.a.Name = "a"
         Me.a.Size = New System.Drawing.Size(100, 20)
         Me.a.TabIndex = 23
@@ -234,7 +112,7 @@ Partial Class Software_Package_Installer
         'MaterialProgressBar2
         '
         Me.MaterialProgressBar2.Depth = 0
-        Me.MaterialProgressBar2.Location = New System.Drawing.Point(263, 170)
+        Me.MaterialProgressBar2.Location = New System.Drawing.Point(558, 175)
         Me.MaterialProgressBar2.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialProgressBar2.Name = "MaterialProgressBar2"
         Me.MaterialProgressBar2.Size = New System.Drawing.Size(100, 5)
@@ -253,52 +131,260 @@ Partial Class Software_Package_Installer
         '
         Me.Timer3.Interval = 2000
         '
+        'Panel9
+        '
+        Me.Panel9.BackgroundImage = Global.Soft_Launcher.My.Resources.Resources._3
+        Me.Panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel9.Controls.Add(Me.Panel8)
+        Me.Panel9.Location = New System.Drawing.Point(-1, 0)
+        Me.Panel9.Name = "Panel9"
+        Me.Panel9.Size = New System.Drawing.Size(803, 84)
+        Me.Panel9.TabIndex = 622
+        '
+        'Panel8
+        '
+        Me.Panel8.Controls.Add(Me.PictureBox61)
+        Me.Panel8.Controls.Add(Me.Label3)
+        Me.Panel8.Controls.Add(Me.Label2)
+        Me.Panel8.Controls.Add(Me.Label1)
+        Me.Panel8.Location = New System.Drawing.Point(3, 3)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(800, 83)
+        Me.Panel8.TabIndex = 28
+        '
+        'PictureBox61
+        '
+        Me.PictureBox61.Image = Global.Soft_Launcher.My.Resources.Resources.SI4
+        Me.PictureBox61.Location = New System.Drawing.Point(3, 12)
+        Me.PictureBox61.Name = "PictureBox61"
+        Me.PictureBox61.Size = New System.Drawing.Size(54, 41)
+        Me.PictureBox61.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox61.TabIndex = 29
+        Me.PictureBox61.TabStop = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.25!)
+        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.Location = New System.Drawing.Point(60, 12)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(422, 39)
+        Me.Label3.TabIndex = 30
+        Me.Label3.Text = "Software Package Installer"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.25!)
+        Me.Label2.Location = New System.Drawing.Point(684, 6)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(52, 57)
+        Me.Label2.TabIndex = 29
+        Me.Label2.Text = "_"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.25!)
+        Me.Label1.Location = New System.Drawing.Point(736, 6)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(58, 57)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "X"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.25!)
+        Me.Label4.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Label4.Location = New System.Drawing.Point(134, 144)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(267, 25)
+        Me.Label4.TabIndex = 29
+        Me.Label4.Text = "Software Package Installer"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.BackColor = System.Drawing.Color.Transparent
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.25!)
+        Me.Label5.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Label5.Location = New System.Drawing.Point(7, 216)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(169, 25)
+        Me.Label5.TabIndex = 623
+        Me.Label5.Text = "Versione: 3.00.4"
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.RoyalBlue
+        Me.Panel2.Controls.Add(Me.Label6)
+        Me.Panel2.Location = New System.Drawing.Point(732, 315)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(50, 37)
+        Me.Panel2.TabIndex = 628
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.Label6.ForeColor = System.Drawing.Color.White
+        Me.Label6.Location = New System.Drawing.Point(8, 11)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(34, 13)
+        Me.Label6.TabIndex = 32
+        Me.Label6.Text = "Avvia"
+        '
+        'ProgressBar1
+        '
+        Me.ProgressBar1.Location = New System.Drawing.Point(12, 265)
+        Me.ProgressBar1.Name = "ProgressBar1"
+        Me.ProgressBar1.Size = New System.Drawing.Size(770, 23)
+        Me.ProgressBar1.TabIndex = 33
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.RoyalBlue
+        Me.Panel1.Controls.Add(Me.Label7)
+        Me.Panel1.Location = New System.Drawing.Point(674, 315)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(52, 37)
+        Me.Panel1.TabIndex = 629
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(7, 11)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(40, 13)
+        Me.Label7.TabIndex = 32
+        Me.Label7.Text = "Installa"
+        '
+        'Panel3
+        '
+        Me.Panel3.BackColor = System.Drawing.Color.RoyalBlue
+        Me.Panel3.Controls.Add(Me.Label8)
+        Me.Panel3.Location = New System.Drawing.Point(600, 315)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(68, 37)
+        Me.Panel3.TabIndex = 630
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.Label8.ForeColor = System.Drawing.Color.White
+        Me.Label8.Location = New System.Drawing.Point(7, 11)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(55, 13)
+        Me.Label8.TabIndex = 32
+        Me.Label8.Text = "DIsinstalla"
+        '
+        'Timer6
+        '
+        '
+        'Timer7
+        '
+        '
+        'Timer8
+        '
+        '
+        'Timer9
+        '
+        '
+        'Timer10
+        '
+        '
+        'Timer11
+        '
+        '
+        'TrackBar1
+        '
+        Me.TrackBar1.Location = New System.Drawing.Point(670, 196)
+        Me.TrackBar1.Maximum = 255
+        Me.TrackBar1.Name = "TrackBar1"
+        Me.TrackBar1.Size = New System.Drawing.Size(104, 45)
+        Me.TrackBar1.TabIndex = 631
+        Me.TrackBar1.Value = 80
+        Me.TrackBar1.Visible = False
+        '
         'Software_Package_Installer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 381)
+        Me.BackgroundImage = Global.Soft_Launcher.My.Resources.Resources.Immagine_2022_06_13_203453
+        Me.ClientSize = New System.Drawing.Size(800, 368)
+        Me.Controls.Add(Me.TrackBar1)
+        Me.Controls.Add(Me.Panel3)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.ProgressBar1)
+        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Panel9)
         Me.Controls.Add(Me.b)
         Me.Controls.Add(Me.a)
         Me.Controls.Add(Me.MaterialProgressBar2)
-        Me.Controls.Add(Me.MaterialButton5)
-        Me.Controls.Add(Me.MaterialButton4)
-        Me.Controls.Add(Me.MaterialButton3)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.MaterialButton2)
-        Me.Controls.Add(Me.MaterialButton1)
-        Me.Controls.Add(Me.MaterialProgressBar1)
-        Me.Controls.Add(Me.MaterialLabel3)
-        Me.Controls.Add(Me.MaterialLabel2)
-        Me.Controls.Add(Me.MaterialLabel1)
         Me.Controls.Add(Me.PictureBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MaximizeBox = False
         Me.Name = "Software_Package_Installer"
         Me.ShowIcon = False
         Me.Text = "Software Package Installer"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel9.ResumeLayout(False)
+        Me.Panel8.ResumeLayout(False)
+        Me.Panel8.PerformLayout()
+        CType(Me.PictureBox61, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
+        CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents MaterialButton4 As MaterialSkin.Controls.MaterialButton
-    Friend WithEvents MaterialButton3 As MaterialSkin.Controls.MaterialButton
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents MaterialButton2 As MaterialSkin.Controls.MaterialButton
-    Friend WithEvents MaterialButton1 As MaterialSkin.Controls.MaterialButton
-    Friend WithEvents MaterialProgressBar1 As MaterialSkin.Controls.MaterialProgressBar
-    Friend WithEvents MaterialLabel3 As MaterialSkin.Controls.MaterialLabel
-    Friend WithEvents MaterialLabel2 As MaterialSkin.Controls.MaterialLabel
-    Friend WithEvents MaterialLabel1 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Timer2 As Timer
-    Friend WithEvents MaterialButton5 As MaterialSkin.Controls.MaterialButton
     Friend WithEvents b As TextBox
     Friend WithEvents a As TextBox
     Friend WithEvents MaterialProgressBar2 As MaterialSkin.Controls.MaterialProgressBar
     Friend WithEvents Timer5 As Timer
     Friend WithEvents Timer4 As Timer
     Friend WithEvents Timer3 As Timer
+    Friend WithEvents Panel9 As Panel
+    Friend WithEvents Panel8 As Panel
+    Friend WithEvents PictureBox61 As PictureBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Label6 As Label
+    Friend WithEvents ProgressBar1 As ProgressBar
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Timer6 As Timer
+    Friend WithEvents Timer7 As Timer
+    Friend WithEvents Timer8 As Timer
+    Friend WithEvents Timer9 As Timer
+    Friend WithEvents Timer10 As Timer
+    Friend WithEvents Timer11 As Timer
+    Friend WithEvents TrackBar1 As TrackBar
 End Class

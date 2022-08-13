@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Soft_Optimizer
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class Software_Package_Installer_ME
     Inherits System.Windows.Forms.Form
 
     'Form esegue l'override del metodo Dispose per pulire l'elenco dei componenti.
-    <System.Diagnostics.DebuggerNonUserCode()>
+    <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,15 +20,10 @@ Partial Class Soft_Optimizer
     'NOTA: la procedura che segue è richiesta da Progettazione Windows Form
     'Può essere modificata in Progettazione Windows Form.  
     'Non modificarla mediante l'editor del codice.
-    <System.Diagnostics.DebuggerStepThrough()>
+    <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
-        Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
-        Me.Timer4 = New System.Windows.Forms.Timer(Me.components)
-        Me.Timer5 = New System.Windows.Forms.Timer(Me.components)
-        Me.Timer6 = New System.Windows.Forms.Timer(Me.components)
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Software_Package_Installer_ME))
         Me.TrackBar1 = New System.Windows.Forms.TrackBar()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -50,12 +45,12 @@ Partial Class Soft_Optimizer
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Timer11 = New System.Windows.Forms.Timer(Me.components)
-        Me.Timer10 = New System.Windows.Forms.Timer(Me.components)
-        Me.Timer9 = New System.Windows.Forms.Timer(Me.components)
-        Me.Timer8 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer6 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer7 = New System.Windows.Forms.Timer(Me.components)
-        Me.Timer12 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer8 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer9 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer10 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer11 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel3.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -66,32 +61,9 @@ Partial Class Soft_Optimizer
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Timer1
-        '
-        Me.Timer1.Interval = 1
-        '
-        'Timer2
-        '
-        '
-        'Timer3
-        '
-        Me.Timer3.Interval = 2000
-        '
-        'Timer4
-        '
-        Me.Timer4.Interval = 2000
-        '
-        'Timer5
-        '
-        Me.Timer5.Interval = 4000
-        '
-        'Timer6
-        '
-        Me.Timer6.Interval = 4200
-        '
         'TrackBar1
         '
-        Me.TrackBar1.Location = New System.Drawing.Point(670, 195)
+        Me.TrackBar1.Location = New System.Drawing.Point(670, 196)
         Me.TrackBar1.Maximum = 255
         Me.TrackBar1.Name = "TrackBar1"
         Me.TrackBar1.Size = New System.Drawing.Size(104, 45)
@@ -103,7 +75,7 @@ Partial Class Soft_Optimizer
         '
         Me.Panel3.BackColor = System.Drawing.Color.RoyalBlue
         Me.Panel3.Controls.Add(Me.Label8)
-        Me.Panel3.Location = New System.Drawing.Point(600, 314)
+        Me.Panel3.Location = New System.Drawing.Point(600, 315)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(68, 37)
         Me.Panel3.TabIndex = 656
@@ -123,7 +95,7 @@ Partial Class Soft_Optimizer
         '
         Me.Panel1.BackColor = System.Drawing.Color.RoyalBlue
         Me.Panel1.Controls.Add(Me.Label7)
-        Me.Panel1.Location = New System.Drawing.Point(674, 314)
+        Me.Panel1.Location = New System.Drawing.Point(674, 315)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(52, 37)
         Me.Panel1.TabIndex = 655
@@ -141,7 +113,7 @@ Partial Class Soft_Optimizer
         '
         'ProgressBar1
         '
-        Me.ProgressBar1.Location = New System.Drawing.Point(12, 264)
+        Me.ProgressBar1.Location = New System.Drawing.Point(12, 265)
         Me.ProgressBar1.Name = "ProgressBar1"
         Me.ProgressBar1.Size = New System.Drawing.Size(770, 23)
         Me.ProgressBar1.TabIndex = 651
@@ -150,7 +122,7 @@ Partial Class Soft_Optimizer
         '
         Me.Panel2.BackColor = System.Drawing.Color.RoyalBlue
         Me.Panel2.Controls.Add(Me.Label6)
-        Me.Panel2.Location = New System.Drawing.Point(732, 314)
+        Me.Panel2.Location = New System.Drawing.Point(732, 315)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(50, 37)
         Me.Panel2.TabIndex = 654
@@ -172,11 +144,11 @@ Partial Class Soft_Optimizer
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.25!)
         Me.Label5.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label5.Location = New System.Drawing.Point(7, 215)
+        Me.Label5.Location = New System.Drawing.Point(7, 216)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(151, 25)
+        Me.Label5.Size = New System.Drawing.Size(169, 25)
         Me.Label5.TabIndex = 653
-        Me.Label5.Text = "Versione: 3.00"
+        Me.Label5.Text = "Versione: 1.00.4"
         '
         'Label4
         '
@@ -184,15 +156,15 @@ Partial Class Soft_Optimizer
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.25!)
         Me.Label4.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label4.Location = New System.Drawing.Point(134, 143)
+        Me.Label4.Location = New System.Drawing.Point(134, 144)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(147, 25)
+        Me.Label4.Size = New System.Drawing.Size(305, 25)
         Me.Label4.TabIndex = 650
-        Me.Label4.Text = "Soft Optimizer"
+        Me.Label4.Text = "Software Package Installer ME"
         '
         'b
         '
-        Me.b.Location = New System.Drawing.Point(438, 180)
+        Me.b.Location = New System.Drawing.Point(438, 181)
         Me.b.Name = "b"
         Me.b.Size = New System.Drawing.Size(100, 20)
         Me.b.TabIndex = 649
@@ -200,7 +172,7 @@ Partial Class Soft_Optimizer
         '
         'a
         '
-        Me.a.Location = New System.Drawing.Point(393, 159)
+        Me.a.Location = New System.Drawing.Point(393, 160)
         Me.a.Name = "a"
         Me.a.Size = New System.Drawing.Size(100, 20)
         Me.a.TabIndex = 648
@@ -210,7 +182,7 @@ Partial Class Soft_Optimizer
         'MaterialProgressBar2
         '
         Me.MaterialProgressBar2.Depth = 0
-        Me.MaterialProgressBar2.Location = New System.Drawing.Point(558, 174)
+        Me.MaterialProgressBar2.Location = New System.Drawing.Point(558, 175)
         Me.MaterialProgressBar2.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialProgressBar2.Name = "MaterialProgressBar2"
         Me.MaterialProgressBar2.Size = New System.Drawing.Size(100, 5)
@@ -219,7 +191,7 @@ Partial Class Soft_Optimizer
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(502, 130)
+        Me.TextBox1.Location = New System.Drawing.Point(502, 131)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(280, 20)
         Me.TextBox1.TabIndex = 646
@@ -231,7 +203,7 @@ Partial Class Soft_Optimizer
         Me.Panel9.BackgroundImage = Global.Soft_Launcher.My.Resources.Resources._3
         Me.Panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel9.Controls.Add(Me.Panel8)
-        Me.Panel9.Location = New System.Drawing.Point(-1, -1)
+        Me.Panel9.Location = New System.Drawing.Point(-1, 0)
         Me.Panel9.Name = "Panel9"
         Me.Panel9.Size = New System.Drawing.Size(803, 84)
         Me.Panel9.TabIndex = 652
@@ -249,7 +221,7 @@ Partial Class Soft_Optimizer
         '
         'PictureBox61
         '
-        Me.PictureBox61.Image = Global.Soft_Launcher.My.Resources.Resources.SI2
+        Me.PictureBox61.Image = Global.Soft_Launcher.My.Resources.Resources.SI3
         Me.PictureBox61.Location = New System.Drawing.Point(3, 12)
         Me.PictureBox61.Name = "PictureBox61"
         Me.PictureBox61.Size = New System.Drawing.Size(54, 41)
@@ -265,9 +237,9 @@ Partial Class Soft_Optimizer
         Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(60, 12)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(231, 39)
+        Me.Label3.Size = New System.Drawing.Size(482, 39)
         Me.Label3.TabIndex = 30
-        Me.Label3.Text = "Soft Optimizer"
+        Me.Label3.Text = "Software Package Installer ME"
         '
         'Label2
         '
@@ -293,38 +265,38 @@ Partial Class Soft_Optimizer
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.Soft_Launcher.My.Resources.Resources.Senza_titolo10
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 100)
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 101)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(116, 100)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 645
         Me.PictureBox1.TabStop = False
         '
-        'Timer11
-        '
-        '
-        'Timer10
-        '
-        '
-        'Timer9
-        '
-        '
-        'Timer8
+        'Timer6
         '
         '
         'Timer7
         '
         '
-        'Timer12
+        'Timer8
         '
         '
-        'Soft_Optimizer
+        'Timer9
+        '
+        '
+        'Timer10
+        '
+        '
+        'Timer11
+        '
+        '
+        'Software_Package_Installer_ME
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.Soft_Launcher.My.Resources.Resources.Immagine_2022_06_13_203453
-        Me.ClientSize = New System.Drawing.Size(800, 363)
+        Me.BackgroundImage = Global.Soft_Launcher.My.Resources.Resources.Immagine_2022_06_13_2034531
+        Me.ClientSize = New System.Drawing.Size(800, 361)
         Me.Controls.Add(Me.TrackBar1)
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel1)
@@ -339,10 +311,8 @@ Partial Class Soft_Optimizer
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.MaximizeBox = False
-        Me.Name = "Soft_Optimizer"
-        Me.ShowIcon = False
-        Me.Text = "Soft Optimizer"
+        Me.Name = "Software_Package_Installer_ME"
+        Me.Text = "Software_Package_Installer_ME"
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
@@ -359,12 +329,7 @@ Partial Class Soft_Optimizer
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Timer1 As Timer
-    Friend WithEvents Timer2 As Timer
-    Friend WithEvents Timer3 As Timer
-    Friend WithEvents Timer4 As Timer
-    Friend WithEvents Timer5 As Timer
-    Friend WithEvents Timer6 As Timer
+
     Friend WithEvents TrackBar1 As TrackBar
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Label8 As Label
@@ -386,10 +351,10 @@ Partial Class Soft_Optimizer
     Friend WithEvents MaterialProgressBar2 As MaterialSkin.Controls.MaterialProgressBar
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Timer11 As Timer
-    Friend WithEvents Timer10 As Timer
-    Friend WithEvents Timer9 As Timer
-    Friend WithEvents Timer8 As Timer
+    Friend WithEvents Timer6 As Timer
     Friend WithEvents Timer7 As Timer
-    Friend WithEvents Timer12 As Timer
+    Friend WithEvents Timer8 As Timer
+    Friend WithEvents Timer9 As Timer
+    Friend WithEvents Timer10 As Timer
+    Friend WithEvents Timer11 As Timer
 End Class

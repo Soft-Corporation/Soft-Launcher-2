@@ -118,34 +118,85 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Senza titolo3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Soft Launcher\Senza titolo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SI1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Soft Innovation\SI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="O" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Soft Launcher\O.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DB" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Soft Launcher\DB.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="G" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Soft Launcher\G.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Senza titolo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Soft Usb passwords\Senza titolo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="L" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Soft Launcher\L.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Senza titolo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Senza titolo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Soft Optimizer 3.00\3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="R" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Soft Launcher\R.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Senza titolo9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Software Package Installer 3.01\Senza titolo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SI3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Soft Innovation\SI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1Senza titolo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Soft Innovation\1Senza titolo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Senza titolo10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Soft Optimizer 3.00\Senza titolo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Senza titolo3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Soft Launcher\Senza titolo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Senza titolo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Software Package Installer 2.00\Senza titolo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Senza titolo5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Software Package Installer 3.01\Senza titolo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Soft Launcher\DB.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Senza titolo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Soft Usb passwords\Senza titolo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Soft Launcher\G.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Immagine 2022-05-24 163948" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Soft Launcher 1.01\Immagine 2022-05-24 163948.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Immagine 2022-06-13 203453" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Soft Optimizer 3.00\Immagine 2022-06-13 203453.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Senza titolo6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Software Package Installer Multiple Edition\Senza titolo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Senza titolo4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Soft Innovation\Senza titolo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="L" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Soft Launcher\L.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Immagine 2022-06-13 2034531" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Soft Optimizer 3.00\Immagine 2022-06-13 203453.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="O" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Soft Launcher\O.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SI2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Soft Innovation\SI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2Senza titolo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Soft Innovation\2Senza titolo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Senza titolo7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Soft Usb passwords\Senza titolo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Senza titolo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Senza titolo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SI" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Soft Innovation\SI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Senza titolo8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Soft Optimizer 3.00\Senza titolo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SI4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\..\..\..\OneDrive\Documenti\Soft-Corporation\Soft Innovation\SI.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
